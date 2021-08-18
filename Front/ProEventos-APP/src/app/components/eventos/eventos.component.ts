@@ -1,5 +1,5 @@
-import { Evento } from './../models/Evento';
-import { EventoService } from './../services/evento.service';
+import { Evento } from '../../models/Evento';
+import { EventoService } from '../../services/evento.service';
 
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';

@@ -1,3 +1,9 @@
+import { TituloComponent } from './shared/titulo/titulo.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ContatosComponent } from './components/contatos/contatos.component';
+import { EventosComponent } from './components/eventos/eventos.component';
+import { PalestrantesComponent } from './components/palestrantes/palestrantes.component';
 import { DateTimeFormatPipe } from './helpers/DateTimeFormat.pipe';
 import { EventoService } from './services/evento.service';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
@@ -7,10 +13,8 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { EventosComponent } from './eventos/eventos.component';
-import { PalestrantesComponent } from './palestrantes/palestrantes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavComponent } from './nav/nav.component';
+import { NavComponent } from './shared/nav/nav.component';
 
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
@@ -26,8 +30,12 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     AppComponent,
     EventosComponent,
     PalestrantesComponent,
+    ContatosComponent,
+    DashboardComponent,
+    PerfilComponent,
     NavComponent,
-    DateTimeFormatPipe
+    DateTimeFormatPipe,
+    TituloComponent
    ],
   imports: [
     BrowserModule,
